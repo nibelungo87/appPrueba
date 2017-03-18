@@ -4,15 +4,19 @@ namespace test
 {
     public partial class MainWindow : Window
     {
+        // Variables globales
+        int myInt;
+
         public MainWindow()
         {
             InitializeComponent();
-            btnClick.Click += (se, ev) => { MessageBox.Show("Click"); };
+            ChrisEvents();
         }
 
-        private void btnClick_Click(object sender, RoutedEventArgs e)
+        private void ChrisEvents()
         {
-            MessageBox.Show("holaa");
+            btnClick.Click += (se, ev) => { myInt++; btnClick.Content = $"{myInt}"; };
+            btnClick.MouseRightButtonUp += (se, ev) => { myInt--; btnClick.Content = $"{myInt}"; };
         }
     }
 }
