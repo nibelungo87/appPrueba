@@ -4,15 +4,16 @@ namespace test
 {
     public partial class MainWindow : Window
     {
+        int r;
         public MainWindow()
         {
             InitializeComponent();
-            btnClick.Click += (se, ev) => { MessageBox.Show("Click"); };
-        }
+            btnClick.Click += (se, ev) =>
+            { r++; btnClick.Content= r.ToString(); };
 
-        private void btnClick_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("holaa");
+            btnClick.MouseRightButtonUp += (se, ev) => { r--; btnClick.Content=r.ToString(); };
+
+            
         }
     }
 }
