@@ -9,5 +9,10 @@ namespace test
             InitializeComponent();
             btnClick.Click += (se, ev) => { MessageBox.Show("Click"); };
         }
+
+        private void btnClick_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("holaa");
+        }
     }
 }
