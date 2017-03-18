@@ -9,8 +9,9 @@
     <DockPanel>
         <Border DockPanel.Dock="Top" Height="40">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="btnPage1" Content="Page 1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="ForestGreen" Width="100"/>
-                <Button x:Name="btnPage2" Content="Page 2" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="ForestGreen" Width="100"/>
+                <Button x:Name="btnPage1" Content="Inicio" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="ForestGreen" Width="100"/>
+                <Button x:Name="btnPage2" Content="Mujeres" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="ForestGreen" Width="100"/>
+                <Button x:Name="btnPage3" Content="Hombres" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="ForestGreen" Width="100"/>
             </StackPanel>
         </Border>
         <Border>

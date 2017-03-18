@@ -1,4 +1,4 @@
-﻿<Page x:Class="test.Pages.Page1"
+﻿<Page x:Class="test.Pages.PageInicio"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -24,6 +24,7 @@
                         <ComboBox x:Name="cbItems" Height="26" Margin="4" Width="200"/>
                     </StackPanel>
                     <Button x:Name="btnAccion" Content="Acción" BorderBrush="{x:Null}" Margin="4"/>
+                    <Label x:Name="lblItems" Margin="4" Content="" />
                 </StackPanel>
             </Border>
         </DockPanel>
