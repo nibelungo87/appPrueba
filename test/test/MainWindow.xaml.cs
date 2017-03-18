@@ -7,6 +7,7 @@ namespace test
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }

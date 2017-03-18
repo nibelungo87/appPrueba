@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="350">
     <Grid>
-        <Label Content="Bacalao App" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button x:Name="btnClick" Content="Click!" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="ForestGreen"/>
     </Grid>
 </Window>
