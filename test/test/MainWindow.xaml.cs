@@ -7,7 +7,7 @@ namespace test
         public MainWindow()
         {
             InitializeComponent();
-
+            btnClick.Click += (se, ev) => { MessageBox.Show("Click"); };
         }
     }
 }
