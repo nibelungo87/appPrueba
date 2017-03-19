@@ -23,8 +23,8 @@
                         <Label Content="aasdasd" Height="26" Margin="4"/>
                         <ComboBox x:Name="cbItems" Height="26" Margin="4" Width="200"/>
                     </StackPanel>
-                    <Button x:Name="btnAccion" Content="editar" BorderBrush="{x:Null}" Margin="4"/>
-                    <Label x:Name="lblItems" Margin="4" Content="" />
+                    <Button x:Name="btnAccion" Content="Editar" BorderBrush="{x:Null}" Margin="4"/>
+                    <StackPanel x:Name="spItems" />
                 </StackPanel>
             </Border>
         </DockPanel>
