@@ -7,8 +7,25 @@
       mc:Ignorable="d" 
       d:DesignHeight="600" d:DesignWidth="340"
       Title="Page1">
-
-    <Grid>
-        <Label Content="PAGE 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid Background="White">
+        <DockPanel HorizontalAlignment="Center">
+            <Border DockPanel.Dock="Top" VerticalAlignment="Top">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="aasdasd" Height="26" Margin="4"/>
+                        <TextBox x:Name="txt1" Height="26" Margin="4" BorderBrush="{x:Null}" Background="LightGray" Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="aasdasd" Height="26" Margin="4"/>
+                        <TextBox x:Name="txt2"  Height="26" Margin="4" BorderBrush="{x:Null}" Background="LightGray" Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="aasdasd" Height="26" Margin="4"/>
+                        <ComboBox x:Name="cbItems" Height="26" Margin="4" Width="200"/>
+                    </StackPanel>
+                    <Button x:Name="btnAccion" Content="Acción" BorderBrush="{x:Null}" Margin="4"/>
+                </StackPanel>
+            </Border>
+        </DockPanel>
     </Grid>
 </Page>
