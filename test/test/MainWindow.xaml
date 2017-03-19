@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:test"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="350">
-    <Grid>
-        <Button x:Name="btnClick" Content="Click!" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="ForestGreen"/>
-    </Grid>
+        Title="MainWindow" Height="600" Width="340">
+    <DockPanel>
+        <Border DockPanel.Dock="Top" Height="40">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="btnPage1" Content="Page 1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="ForestGreen" Width="100"/>
+                <Button x:Name="btnPage2" Content="Page 2" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="ForestGreen" Width="100"/>
+            </StackPanel>
+        </Border>
+        <Border>
+            <Frame x:Name="frameMenu" NavigationUIVisibility="Hidden"/>
+        </Border>
+    </DockPanel>
 </Window>

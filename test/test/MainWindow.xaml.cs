@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using test.Pages;
 
 namespace test
 {
@@ -15,8 +16,8 @@ namespace test
 
         private void ChrisEvents()
         {
-            btnClick.Click += (se, ev) => { myInt++; btnClick.Content = $"{myInt}"; };
-            btnClick.MouseRightButtonUp += (se, ev) => { myInt--; btnClick.Content = $"{myInt}"; };
+            btnPage1.Click += (se, ev) => { frameMenu.Content = new Page1(); };
+            btnPage2.Click += (se, ev) => { frameMenu.Content = new Page2(); };
         }
     }
 }
